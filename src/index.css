@@ -1,3 +1,14 @@
+:root {
+  --blue: #52BFFF;
+  --text-grey: #7A7A7A;
+  --text-white: #FFFFFF;
+  --bgr-white: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -8,6 +19,17 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', Gotham Pro,
     monospace;
+}
+
+
+.container {
+  width: calc(100% - 30px);
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    width: calc(100% - 60px);
+  }
 }

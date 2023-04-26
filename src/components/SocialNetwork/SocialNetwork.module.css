@@ -1,0 +1,13 @@
+.network {
+    height: 17px;
+    width: 75px;
+    display: flex;
+}
+.network img {
+    display: block;
+    height: inherit;
+    margin-right: 15px;
+}
+.network img:last-child {
+    margin-right: 0;
+}
