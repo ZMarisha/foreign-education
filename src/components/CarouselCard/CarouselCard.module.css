@@ -1,0 +1,26 @@
+.carousel {
+    width: 270px;
+    height: 234px;
+    border-radius: 25px;
+    background-color: var(--bgr-white);
+    padding: 12px;
+}
+.carousel img {
+    border-radius: 25px;
+}
+.carouselItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.carouselItem p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--text-grey);
+    margin-bottom: 0;
+    padding-top: 10px;
+}
+.carouselItem p:first-child {
+    font-weight: 600;
+}

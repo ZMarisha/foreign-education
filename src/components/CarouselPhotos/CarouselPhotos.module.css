@@ -1,0 +1,13 @@
+.photos {
+    text-align: center;
+}
+.photos h2{
+font-size: 36px;
+font-weight: 700;
+line-height: 46px;
+color: var(--blue);
+margin-bottom: 40px;
+}
+.containerCarousel {
+    width: 100%;
+}

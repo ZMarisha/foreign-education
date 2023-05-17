@@ -1,0 +1,51 @@
+.aboutGrant {
+    height: 900px;
+    background-image: url(../../images/bigban.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -102px;
+}
+.mainText {
+    width: 600px;
+    padding-top: 200px;
+    margin-bottom: 50px;
+}
+.mainText h1 {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 60px;
+    font-family: 'Gotham Pro';
+}
+.mainText h1 span {
+    color: var(--blue);
+    font-family: 'Playfair Display';
+}
+.mainText p {
+    font-family: 'Gotham Pro';
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    padding-top: 25px;
+    color: var(--text-grey)
+}
+.address {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 15px;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    display: flex;
+    margin-top: 360px;
+}
+.address p:first-child {
+    margin-right: 40px;
+}
+.address p span {
+    margin-left: 15px;
+}
+.backClouds {
+    height: 2900px;
+    background-image: url('../../images/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
