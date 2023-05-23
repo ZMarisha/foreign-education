@@ -8,20 +8,32 @@
     color: var(--text-white);
     background: var(--blue);
     border: none;
+    box-sizing: border-box;
+}
+.btn:hover {
+    background: var(--hover);
+}
+.btn:active {
+    background: var(--blue);
 }
 
 .imgBtn {
     width: 38px;
     height: 38px;
     border-radius: 50%;
+    background-color:#B1E2FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .imgBtn img {
-    height: inherit;
-    width: inherit;
+    height: 16px;
+    width: 16px;
 }
 .btn p {
-    margin-left: 14px;
     font-weight: 700;
     font-size: 16px;
     line-height: 15px;
+    width: 70%;
 }

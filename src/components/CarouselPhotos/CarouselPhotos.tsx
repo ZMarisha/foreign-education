@@ -41,7 +41,7 @@ const CarouselPhotos:React.FC = () => {
 
     return (
         <div className={d.photos}>
-            <h2>Photos of our students</h2>
+            <h2 className="titleText">Photos of our students</h2>
             <div className={d.containerCarousel}>
                 <Carousel cols={5} rows={1} gap={20} loop >
                     {studentPhotos.map(el => 

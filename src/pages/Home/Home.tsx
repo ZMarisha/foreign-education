@@ -8,9 +8,17 @@ import CarouselUniversities from "../../components/CarouselUniversities/Carousel
 import CarouselReviews from "../../components/CarouselReviews/CarouselReviews";
 import CarouselPhotos from "../../components/CarouselPhotos/CarouselPhotos";
 import WhyUs from "../../components/WhyUs/WhyUs";
+import QuestionsAndAnswers from "../../components/QuestionsAndAnswers/QuestionsAndAnswers";
+import ConnectWithUs from "../../components/ConnectWithUs/ConnectWithUs";
+import QuestionsRemain from "../../components/QuestionsRemain/QuestionsRemain";
+import telWhite from '../../images/telWhite.svg';
 
 
 const Home:React.FC = () => {
+
+    const getModalView = () => {
+        alert('Modal view');
+    }
 
     return (
         <div>
@@ -20,7 +28,7 @@ const Home:React.FC = () => {
                         <h1>Grant and contract training in <span>foreign</span> universities</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
                     </div>
-                    <BtnConnect />
+                    <BtnConnect icon={telWhite} text='Connect with us' fn={getModalView}/>
                     <address className={d.address}>
                         <p>
                             <img src={address} alt='address'/>
@@ -39,8 +47,11 @@ const Home:React.FC = () => {
                     <CarouselUniversities />
                     <CarouselReviews />
                     <CarouselPhotos />
+                    <QuestionsAndAnswers />
                 </div>
             </div>
+            <ConnectWithUs />
+            <QuestionsRemain />
         </div>
     )
 }

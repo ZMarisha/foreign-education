@@ -8,7 +8,9 @@
     border: 1px solid var(--blue);
     padding: 5px;
 }
-
+.btn:hover {
+    border: 1px solid var(--hover);
+}
 .imgBtn {
     width: 38px;
     height: 38px;

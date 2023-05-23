@@ -1,16 +1,21 @@
 import React from "react";
 import d from './BtnConnect.module.css';
-import btnConnect from '../../images/btnConnect.svg';
 
-const BtnConnect = () => {
+type IBtnConnect = {
+    icon: string,
+    text: string
+    fn: any
+}
+
+const BtnConnect:React.FC<IBtnConnect> = ({icon, text, fn}) => {
 
 
     return (
-        <button className={d.btn}>
+        <button className={d.btn} onClick={fn}>
             <div className={d.imgBtn}>
-                <img src={btnConnect} alt='button for application'/>
+                <img src={icon} alt='button for application'/>
             </div>
-            <p>Connect with us</p>
+            <p>{text}</p>
         </button>
     )
 }

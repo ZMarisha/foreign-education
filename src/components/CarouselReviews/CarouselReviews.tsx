@@ -49,7 +49,7 @@ const CarouselReviews:React.FC = () => {
 
     return (
         <div className={d.carousel}>
-            <h2>Feedback from our students</h2>
+            <h2 className="titleText">Feedback from our students</h2>
             <div className={d.container}>
                 <Carousel cols={3} rows={1} gap={20} loop >
                     {students.map(el => <Carousel.Item key={el.id}>

@@ -11,7 +11,7 @@ const WhyUs = () => {
     return (
         <div className={d.section}>
             <p><span>Welcome</span> to the foreign education group</p>
-            <h2>Why us?</h2>
+            <h2 className="titleText">Why us?</h2>
             <div className={d.items}>
                 <div className={d.item}>
                     <div className={d.itemImg}>

@@ -70,7 +70,7 @@ const CarouselUniversities:React.FC = () => {
 
     return (
         <div className={d.infoUniversities}>
-            <h2>Universities</h2>
+            <h2 className="titleText">Universities</h2>
             <p>In our directory you will find more than 100 universities from more than 14 countries</p>
             <div className={d.containerCarousel}>
                 <Carousel cols={5} rows={1} gap={20} loop >
