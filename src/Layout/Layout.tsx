@@ -10,7 +10,7 @@ const Layout:React.FC = () => {
     return (
         <>
             <Header />
-            <main className="container">
+            <main>
                 <Outlet></Outlet>
             </main>
             <Footer></Footer>

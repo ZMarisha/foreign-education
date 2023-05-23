@@ -12,7 +12,7 @@ import time from '../../images/time.svg';
 import address from '../../images/address.svg';
 
 
-const Footer = () => {
+const Footer:React.FC = () => {
 
     return (
         <div className={d.footer}>

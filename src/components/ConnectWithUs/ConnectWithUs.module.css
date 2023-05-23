@@ -1,0 +1,12 @@
+.londonBack {
+    height: 725px;
+    background-image: url(../../images/londonBack.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.blockPossition {
+    height: 725px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

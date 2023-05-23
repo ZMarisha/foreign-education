@@ -1,0 +1,40 @@
+.student {
+    width: 367px;
+    height: 304px;
+    border-radius: 25px;
+    background-color: var(--bgr-white);
+    margin-top: 80px;
+    position: relative;
+    padding: 20px 27px;
+    display: grid;
+    align-items: flex-end;
+    text-align: start;
+}
+
+.avatar {
+    width: 212px;
+    height: 212px;
+    position: absolute;
+    right: 21%;
+    top: -25%;
+}
+.avatar img {
+    width: inherit;
+    height: inherit;
+}
+.review p:first-child {
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--text-grey);
+    font-family: 'Gotham Pro';
+}
+.review p:last-child {
+    color: var(--text-grey);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    font-family: 'Gotham Pro';
+}

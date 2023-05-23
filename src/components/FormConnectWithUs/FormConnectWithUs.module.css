@@ -1,0 +1,79 @@
+.block {
+    width: 560px;
+    height: 400px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 12px;
+    background-color: var(--bgr-white);
+}
+.line {
+    border: 1px dashed #E2EDF3;
+    border-radius: 20px;
+    width: 536px;
+    height: 376px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.line h3 {
+    color: var(--text-black);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: 'Gotham Pro';
+}
+.connectForm {
+    margin-top: 21px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+.connectForm input {
+    width: 440px;
+    height: 48px;
+    border-radius: 10px;
+    background-color: var(--bgr-lightblue);
+    border: none;
+    background-repeat: no-repeat;
+    background-position-x: 21px;
+    background-position-y: 18px;
+    padding-left: 49px;
+}
+.connectForm input::placeholder {
+    color: #98B6C9;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+}
+.iconPerson {
+    background-image: url(../../images/yourName.svg);
+}
+.iconTel {
+    background-image: url(../../images/lightBlueTel.svg);
+}
+.iconMessage {
+    background-image: url(../../images/lightMessage.svg);
+}
+.connectForm textarea {
+    height: 100px;
+    width: 440px;
+    border-radius: 10px;
+    background-color: var(--bgr-lightblue);
+    border: none;
+    background-repeat: no-repeat;
+    background-position-x: 21px;
+    background-position-y: 18px;
+    padding-left: 49px;
+    margin-bottom: 22px;
+    padding: 18px 21px 18px 49px;
+}
+.connectForm textarea::placeholder {
+    color: #98B6C9;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+}
