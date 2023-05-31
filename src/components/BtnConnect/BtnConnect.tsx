@@ -11,7 +11,7 @@ const BtnConnect:React.FC<IBtnConnect> = ({icon, text, fn}) => {
 
 
     return (
-        <button className={d.btn} onClick={fn}>
+        <button className={d.btn} onClick={fn} type='submit'>
             <div className={d.imgBtn}>
                 <img src={icon} alt='button for application'/>
             </div>

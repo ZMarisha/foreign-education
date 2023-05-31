@@ -13,6 +13,7 @@
     height: 376px;
     box-sizing: border-box;
     text-align: center;
+    position: relative;
 }
 .line h3 {
     color: var(--text-black);
@@ -76,4 +77,18 @@
     line-height: 20px;
     font-family: 'Gotham Pro';
     font-style: normal;
+}
+@keyframes fadeOut{
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+.alert {
+    animation: fadeOut 5s ease forwards;
+    width: 100%;
+    position: fixed;
+    top: 30px;
 }

@@ -5,7 +5,7 @@
 
 .FAQ {
     display: grid;
-    grid-template-columns: repeat(2, 536px);
+    grid-template-columns: 536px 536px;
     justify-content: center;
     gap: 40px;
     margin-top: 40px;

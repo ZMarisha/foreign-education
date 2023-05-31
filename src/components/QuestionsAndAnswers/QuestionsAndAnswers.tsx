@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import d from './QuestionsAndAnswers.module.css';
 
 
@@ -27,14 +27,18 @@ const FAQ = [
 
 const QuestionsAndAnswers:React.FC = () => {
 
+    const [toggle, setToggle] = useState(false);
+
     return (
         <div className={d.sectionFAQ}>
             <h2 className="titleText">Questions and answers</h2>
             <div className={d.FAQ}>
                 {FAQ.map(el => <div key={el.id}>
-                        <button className={d.btn}>+</button>
+                        {toggle ? <button className={d.btn} onClick={() => {
+                            setToggle(!toggle)
+                            }}>-</button> : <button className={d.btn} onClick={() => setToggle(!toggle)}>+</button>}
                         <p>{el.question}</p>
-                        <p style={{display: 'none'}}>{el.answer} </p>
+                        {toggle && <p className="text">{el.answer}</p>}
                     </div>
                 )}
             </div>
