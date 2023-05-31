@@ -1,16 +1,13 @@
 import React from "react";
-import fb from '../../images/fb.svg';
-import inst from '../../images/inst.svg';
-import telegram from '../../images/telegram.svg';
-import d from './SocialNetwork.module.css'
+import d from './SocialNetwork.module.css';
 
-const SocialNetwork = () => {
+const SocialNetwork:React.FC = () => {
 
     return (
         <div className={d.network}>
-            <img src={fb} alt='facebook'/>
-            <img src={inst} alt='instagram'/>
-            <img src={telegram} alt='telegtam'/>
+            {/* <img src={fb} alt='facebook'/> */}
+            <div className={`${d.socNetwork} ${d.facebook}`}></div>
+            <div className={`${d.socNetwork} ${d.telegram}`}></div>
         </div>
     )
 }

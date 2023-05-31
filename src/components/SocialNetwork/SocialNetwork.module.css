@@ -3,11 +3,27 @@
     width: 75px;
     display: flex;
 }
-.network img {
-    display: block;
-    height: inherit;
+.socNetwork {
     margin-right: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.network img:last-child {
+.facebook {
+    background-image: url(../../images/fb.svg);
+    height: 22px;
+    width: 11px;
+}
+.facebook:hover {
+    background-image: url(../../images/fbHover.svg);
+}
+.network div:last-child {
     margin-right: 0;
+}
+.telegram {
+    background-image: url(../../images/telegram.svg);
+    height: 22px;
+    width: 25px;
+}
+.telegram:hover {
+   background-image: url(../../images/telHover.svg);
 }
