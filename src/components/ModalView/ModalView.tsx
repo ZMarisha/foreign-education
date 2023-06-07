@@ -2,13 +2,17 @@ import React from "react";
 import FormConnectWithUs from "../FormConnectWithUs/FormConnectWithUs";
 import d from './ModalView.module.css';
 
-const ModalView:React.FC = () => {
+type IModalView = {
+    getModalView: any
+}
+
+const ModalView:React.FC<IModalView> = ({getModalView}) => {
 
     return (
         <div className={d.back}>
-            <p>vchjcvjhcvjh</p>
-            <div className="container">
+            <div className={`${'container'} ${d.positionModalView}`}>
                 <FormConnectWithUs />
+                <button onClick={getModalView} className={d.btnClose}>x</button>
             </div>
         </div>
     )

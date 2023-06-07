@@ -34,9 +34,9 @@ const QuestionsAndAnswers:React.FC = () => {
             <h2 className="titleText">Questions and answers</h2>
             <div className={d.FAQ}>
                 {FAQ.map(el => <div key={el.id}>
-                        {toggle ? <button className={d.btn} onClick={() => {
+                        {toggle ? <button className={`${d.btn} ${d.btnMinus}`} onClick={() => {
                             setToggle(!toggle)
-                            }}>-</button> : <button className={d.btn} onClick={() => setToggle(!toggle)}>+</button>}
+                            }}>-</button> : <button className={`${d.btn} ${d.btnPlus}`} onClick={() => setToggle(!toggle)}>+</button>}
                         <p>{el.question}</p>
                         {toggle && <p className="text">{el.answer}</p>}
                     </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import d from './Home.module.css';
 import '../../index.css';
 import BtnConnect from "../../components/BtnConnect/BtnConnect";
@@ -12,16 +12,21 @@ import QuestionsAndAnswers from "../../components/QuestionsAndAnswers/QuestionsA
 import ConnectWithUs from "../../components/ConnectWithUs/ConnectWithUs";
 import QuestionsRemain from "../../components/QuestionsRemain/QuestionsRemain";
 import telWhite from '../../images/telWhite.svg';
+import ModalView from "../../components/ModalView/ModalView";
 
 
 const Home:React.FC = () => {
 
+    const [open, setOpen] = useState(false)
+
     const getModalView = () => {
-        alert('Modal view');
+        setOpen(!open)
+        console.log(open)
     }
 
     return (
         <div>
+            {open && <ModalView getModalView={getModalView}/>}
             <div className={d.aboutGrant}>
                 <div className="container">
                     <div className={d.mainText}>

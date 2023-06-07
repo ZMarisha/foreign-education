@@ -1,5 +1,6 @@
 .signUpField {
     position: relative;
+    width: max-content;
 }
 .error {
     position: absolute;

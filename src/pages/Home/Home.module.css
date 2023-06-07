@@ -4,6 +4,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: -102px;
+    z-index: 0;
 }
 .mainText {
     width: 600px;

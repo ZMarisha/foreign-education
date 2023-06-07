@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from './Layout/Layout';
 import Home from './pages/Home/Home';
 import AboutUs from './pages/AboutUs/AboutUs';
+import Application from './pages/Application/Application';
 
 const App:React.FC = () => {
 
@@ -19,6 +20,10 @@ const App:React.FC = () => {
         {
           path: "/aboutus",
           element: <AboutUs />,
+        },
+        {
+          path: "/application",
+          element: <Application />,
         },
       ],
     }
