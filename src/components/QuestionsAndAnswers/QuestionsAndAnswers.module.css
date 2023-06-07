@@ -30,3 +30,10 @@
     border: none;
     border-radius: 50%;
 }
+.btnPlus {
+    background-image: url(../../images/blueBtn.png);
+    background-size: cover;
+}
+.btnMinus {
+    background: #D9D9D9;
+}

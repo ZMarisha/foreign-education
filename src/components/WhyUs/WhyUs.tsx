@@ -5,7 +5,7 @@ import educn from '../../images/educn.png';
 import docnt from '../../images/docnt.png';
 
 
-const WhyUs = () => {
+const WhyUs:React.FC = () => {
 
 
     return (

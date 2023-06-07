@@ -1,0 +1,30 @@
+.topHeadering {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 35px 0px 40px 0px;
+}
+.btnBack {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+.backSymbol {
+    background-image: url('../../images/arrowBack.svg');
+    height: 15px;
+    width: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 29px;
+}
+.btnBack:hover .backSymbol {
+    background-image: url('../../images/arrowBackHover.svg');
+}
+.btnBack:hover {
+    color: black;
+    color: #D9D9D9;
+}
+.topHeadering h1 {
+    margin: 0 auto;
+}

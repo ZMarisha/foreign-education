@@ -34,9 +34,6 @@
     position: relative;
     margin-right: 20px;
 }
-.item:hover {
-    box-shadow: 0 0 9px lightblue;
-}
 .itemImg {
     width: 150px;
     height: 116px;

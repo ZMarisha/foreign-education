@@ -1,0 +1,89 @@
+.formBlock {
+    display: grid;
+    justify-content: center;
+}
+
+.labelBlock input {
+    border-radius: 10px;
+    background-color: var(--bgr-lightblue);
+    border: none;
+    padding-left: 20px;
+}
+.fullName input {
+    width: 440px;
+    height: 48px;
+}
+.labelBlock input::placeholder {
+    color: #98B6C9;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+}
+.labelBlock {
+    display: flex;
+    gap: 30px;
+}
+.labelText {
+    margin: 25px 0 10px 0;
+}
+.labelText img {
+    margin-right: 17px;
+}
+.birthday input {
+    width: 140px;
+    height: 48px;
+}
+.contacts {
+    display: grid;
+    gap: 8px
+}
+.contacts input {
+    width: 442px;
+}
+.contactItems {
+    display: flex;
+    gap: 30px;
+}
+.contacts input {
+    width: 440px;
+    height: 48px;
+}
+.englishLevel label{
+    display: flex;
+}
+.englishLevel {
+    margin-bottom: 10px;
+}
+.englishLevel label span {
+    margin-left: 10px;
+}
+.iconMessage {
+    background-image: url(../../images/lightMessage.svg);
+}
+.labelBlock textarea {
+    height: 100px;
+    width: 440px;
+    border-radius: 10px;
+    background-color: var(--bgr-lightblue);
+    border: none;
+    background-repeat: no-repeat;
+    background-position-x: 21px;
+    background-position-y: 18px;
+    padding-left: 49px;
+    margin-bottom: 22px;
+    padding: 18px 21px 18px 49px;
+}
+.labelBlock textarea::placeholder {
+    color: #98B6C9;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+}
+.btnSend {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}

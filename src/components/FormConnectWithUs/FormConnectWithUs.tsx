@@ -10,14 +10,14 @@ import AlertTitle from '@mui/material/AlertTitle'
 
 const SignupSchema = Yup.object().shape({
     name: Yup.string()
-        .min(2, 'Login is too short')
+        .min(2, 'Name is too short')
         .max(16, 'No more 16 symbols')
-        .required('Required field') //указываает на обязательное заполнение поля
+        .required('required field') //указываает на обязательное заполнение поля
         .matches(/^[A-Za-z]+$/, 'forbidden symbol'),
     phone: Yup.string()
-        .required('Required field')
+        .required('required field')
         .matches(/^[0-9]+$/, 'Insert only numbers')
-        .min(10, 'Phone is too short')
+        .min(8, 'Phone is too short')
         .max(12, 'No more 12 symbols'),
     comment: Yup.string()
 });
