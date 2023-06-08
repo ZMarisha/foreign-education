@@ -1,0 +1,15 @@
+.ourTeam {
+    display: grid;
+    grid-template-columns: repeat(2, 560px);
+    grid-template-rows: 430px;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 25px;
+    margin-bottom: 115px;
+}
+.ourTeamImg {
+    display: block;
+}
+.ourTeamText_marginBottom {
+    margin-bottom: 30px;
+}

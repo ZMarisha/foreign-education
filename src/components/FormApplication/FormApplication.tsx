@@ -26,13 +26,22 @@ const SignupSchema = Yup.object().shape({
         .max(16, 'No more 16 symbols')
         .required('required field'), //указываает на обязательное заполнение поля
     birthDay: Yup.string()
-        .required('required field'),
+        .matches(/^[0-9]+$/, 'forbidden symbol')
+        .required('required field')
+        .min(2, 'at least 2 symbols')
+        .max(2, 'No more 2 symbols'),
     birthMonth: Yup.string()
-        .required('required field'),
+        .matches(/^[0-9]+$/, 'forbidden symbol')
+        .required('required field')
+        .min(2, 'at least 2 symbols')
+        .max(2, 'No more 2 symbols'),
     birthYear: Yup.string()
-        .required('required field'),
+        .matches(/^[0-9]+$/, 'forbidden symbol')
+        .required('required field')
+        .min(4, 'at least 4 symbols')
+        .max(4, 'No more 4 symbols'),
     city: Yup.string()
-        .min(2, 'Last name is too short')
+        .min(2, 'City is too short')
         .max(16, 'No more 16 symbols')
         .required('required field') //указываает на обязательное заполнение поля
         .matches(/^[A-Za-z]+$/, 'forbidden symbol'),
@@ -42,7 +51,23 @@ const SignupSchema = Yup.object().shape({
         .min(8, 'Phone is too short')
         .max(12, 'No more 12 symbols'),
     email: Yup.string()
-        .required('required field'),
+        .required('required field')
+        .email('Invalid email'),
+    startDay: Yup.string()
+        .matches(/^[0-9]+$/, 'forbidden symbol')
+        .required('required field')
+        .min(2, 'at least 2 symbols')
+        .max(2, 'No more 2 symbols'),
+    startMonth: Yup.string()
+        .matches(/^[0-9]+$/, 'forbidden symbol')
+        .required('required field')
+        .min(2, 'at least 2 symbols')
+        .max(2, 'No more 2 symbols'),
+    startYear: Yup.string()
+        .matches(/^[0-9]+$/, 'forbidden symbol')
+        .required('required field')
+        .min(4, 'at least 4 symbols')
+        .max(4, 'No more 4 symbols'),
     comment: Yup.string()
 })
 
@@ -63,6 +88,12 @@ const FormApplication:React.FC = () => {
                 beginningLevel: false,
                 middleLevel: false,
                 advancedLevel: false,
+                bachelor: false,
+                foundation: false,
+                master: false,
+                startDay: '',
+                startMonth: '',
+                startYear: '',
                 comment: ''
             }}
             validationSchema={SignupSchema}
@@ -158,11 +189,11 @@ const FormApplication:React.FC = () => {
                                 <span className="text">Preferred start date</span>
                             </div>
                             <div className={`${d.labelBlock} ${d.birthday}`}>
-                                <FieldFormik type={'text'} placeholder={'Day'} name={'birthDay'} error={errors.birthDay} touched={touched.birthDay} className={null} component={'input'}/>
-                                <FieldFormik type={'text'} placeholder={'Month'} name={'birthMonth'} error={errors.birthMonth} touched={touched.birthMonth} className={null} component={'input'}/>
-                                <FieldFormik type={'text'} placeholder={'Year'} name={'birthYear'} error={errors.birthYear} touched={touched.birthYear} className={null} component={'input'}/>
+                                <FieldFormik type={'text'} placeholder={'Day'} name={'startDay'} error={errors.startDay} touched={touched.startDay} className={null} component={'input'}/>
+                                <FieldFormik type={'text'} placeholder={'Month'} name={'startMonth'} error={errors.startMonth} touched={touched.startMonth} className={null} component={'input'}/>
+                                <FieldFormik type={'text'} placeholder={'Year'} name={'startYear'} error={errors.startYear} touched={touched.startYear} className={null} component={'input'}/>
                             </div>
-                            <div className={d.labelBlock}>
+                            <div className={`${d.labelBlock} ${d.comment}`}>
                                 <FieldFormik type={'text'} placeholder={"Additional comments"} name={'comment'} error={errors.comment} touched={touched.comment} className={d.iconMessage} component="textarea"/>
                             </div>
                         </div>

@@ -21,8 +21,8 @@ const Application:React.FC = () => {
                     </button>
                     <h1 className="titleText">Application for consultation</h1>
                 </div>
-                <FormApplication />
             </div>
+            <FormApplication />
         </div>
     )
 }

@@ -5,6 +5,7 @@ import Layout from './Layout/Layout';
 import Home from './pages/Home/Home';
 import AboutUs from './pages/AboutUs/AboutUs';
 import Application from './pages/Application/Application';
+import Services from './pages/Services/Services';
 
 const App:React.FC = () => {
 
@@ -24,6 +25,10 @@ const App:React.FC = () => {
         {
           path: "/application",
           element: <Application />,
+        },
+        {
+          path: "/services",
+          element: <Services />,
         },
       ],
     }
