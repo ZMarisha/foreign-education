@@ -81,6 +81,9 @@
     font-family: 'Gotham Pro';
     font-style: normal;
 }
+.comment {
+    margin-top: 30px;
+}
 .btnSend {
     display: flex;
     justify-content: center;

@@ -18,7 +18,7 @@ const CarouselStudentFeedback:React.FC<ICarouselStudentFeedback> = ({img, firstN
                 <img width="246px" height='163px' src={img} alt='student'/>
             </div>
             <div className={d.review}>
-                <p>{firstName} {LastName}</p>
+                <p className="selectedText">{firstName} {LastName}</p>
                 <p>{review}</p>
             </div>
         </div>

@@ -72,3 +72,11 @@ code {
   color: var(--label-text);
   font-style: normal;
 }
+.selectedText {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: 'Gotham Pro';
+  color: var(--text-grey);
+  font-style: normal;
+}

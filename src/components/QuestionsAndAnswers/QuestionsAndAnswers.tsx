@@ -37,7 +37,7 @@ const QuestionsAndAnswers:React.FC = () => {
                         {toggle ? <button className={`${d.btn} ${d.btnMinus}`} onClick={() => {
                             setToggle(!toggle)
                             }}>-</button> : <button className={`${d.btn} ${d.btnPlus}`} onClick={() => setToggle(!toggle)}>+</button>}
-                        <p>{el.question}</p>
+                        <p className="selectedText">{el.question}</p>
                         {toggle && <p className="text">{el.answer}</p>}
                     </div>
                 )}

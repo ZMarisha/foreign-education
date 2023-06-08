@@ -25,11 +25,6 @@
 .review p:first-child {
     text-align: center;
     padding-bottom: 5px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 26px;
-    color: var(--text-grey);
-    font-family: 'Gotham Pro';
 }
 .review p:last-child {
     color: var(--text-grey);
