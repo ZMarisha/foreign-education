@@ -1,14 +1,15 @@
 import React from "react";
+import d from './CarouselStudentPhoto.module.css';
 
 type ICarouselStudentPhoto = {
-    avatar: string
+    img: string
 }
 
-const CarouselStudentPhoto:React.FC<ICarouselStudentPhoto> = ({avatar}) => {
+const CarouselStudentPhoto:React.FC<ICarouselStudentPhoto> = ({img}) => {
 
     return (
-        <div>
-            <img src={avatar} alt='student avatar'/>
+        <div className={d.photoStudent}>
+            <img src={img} alt='student avatar'/>
         </div>
     )
 }

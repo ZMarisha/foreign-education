@@ -4,21 +4,21 @@ import d from './CarouselStudentFeedback.module.css'
 type ICarouselStudentFeedback = {
     id: number,
     firstName: string,
-    LastName: string,
+    lastName: string,
     img: string,
     review: string
 }
 
-const CarouselStudentFeedback:React.FC<ICarouselStudentFeedback> = ({img, firstName, LastName, review}) => {
+const CarouselStudentFeedback:React.FC<ICarouselStudentFeedback> = ({img, firstName, lastName, review}) => {
 
 
     return (
         <div className={d.student}>
             <div className={d.avatar}>
-                <img width="246px" height='163px' src={img} alt='student'/>
+                <img src={img} alt='student'/>
             </div>
             <div className={d.review}>
-                <p className="selectedText">{firstName} {LastName}</p>
+                <p className="selectedText">{firstName} {lastName}</p>
                 <p>{review}</p>
             </div>
         </div>

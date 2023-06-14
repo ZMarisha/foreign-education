@@ -1,0 +1,24 @@
+.linkNews {
+    text-decoration: none;
+}
+.article {
+    width: 850px;
+    padding: 12px 20px 12px 12px;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+.article:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.imgNews {
+    height: 176px;
+    width: 266px;
+    margin-right: 12px;
+}
+.imgNews img {
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+    border-radius: 20px;
+}

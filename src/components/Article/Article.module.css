@@ -1,0 +1,31 @@
+.fnBack {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: inherit;
+}
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.article h1 {
+    max-width: 700px;
+    text-align: center;
+}
+.articleImg {
+    width: 752px;
+    height: 340px;
+    margin: 40px auto;
+}
+.articleImg img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+article h3 {
+    text-indent: 30px;
+}
+.article p {
+    text-indent: 30px;
+}

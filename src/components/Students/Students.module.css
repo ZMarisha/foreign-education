@@ -1,0 +1,39 @@
+.ourStudents {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.ourStudent {
+    width: 850px;
+    padding: 12px 20px 12px 12px;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+.imgNews {
+    height: 176px;
+    width: 266px;
+    margin-right: 12px;
+}
+.imgNews img {
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.topText {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+.topImg {
+    display: flex;
+    align-items: center;
+}
+.topImg img {
+    display: block;
+    width: 14px;
+    height: 14px;
+    margin-right: 12px;
+}

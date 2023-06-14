@@ -1,0 +1,12 @@
+.contacts {
+    text-align: center;
+}
+.map {
+    width: 100%;
+    height: 696px;
+    margin-top: 20px;
+    border: none;
+}
+.topText {
+    margin: 35px 0 10px 0;
+}
