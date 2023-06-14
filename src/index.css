@@ -62,7 +62,8 @@ code {
   font-size: 18px;
   line-height: 26px;
   font-family: 'Gotham Pro';
-  color: var(--text-grey)
+  color: var(--text-grey);
+  font-style: normal;
 }
 .labelText {
   font-weight: 400;
@@ -76,6 +77,18 @@ code {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  font-family: 'Gotham Pro';
+  color: var(--text-grey);
+  font-style: normal;
+}
+.margin {
+  margin-top: 35px;
+  margin-bottom: 40px;
+}
+.textSize12 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
   font-family: 'Gotham Pro';
   color: var(--text-grey);
   font-style: normal;

@@ -6,6 +6,10 @@ import Home from './pages/Home/Home';
 import AboutUs from './pages/AboutUs/AboutUs';
 import Application from './pages/Application/Application';
 import Services from './pages/Services/Services';
+import News from './pages/News/News';
+import Article from './components/Article/Article';
+import Students from './components/Students/Students';
+import Contacts from './pages/Contacts/Contacts';
 
 const App:React.FC = () => {
 
@@ -29,6 +33,22 @@ const App:React.FC = () => {
         {
           path: "/services",
           element: <Services />,
+        },
+        {
+          path: "/news",
+          element: <News />,
+        },
+        {
+          path: "/news/:id",
+          element: <Article />,
+        },
+        {
+          path: "/students",
+          element: <Students />,
+        },
+        {
+          path: "/contacts",
+          element: <Contacts />,
         },
       ],
     }

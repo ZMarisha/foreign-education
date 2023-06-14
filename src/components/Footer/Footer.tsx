@@ -36,7 +36,7 @@ const Footer:React.FC = () => {
                                 <p>
                                     <img src={tel} alt='phone'/>
                                     <span>+988 (99) 878-63-99</span>
-                                    <span>+998 (99) 878-63-99</span>
+                                    <span className={d.phoneMargin}>+998 (99) 878-63-99</span>
                                 </p>
                                 <p>
                                     <img src={time} alt='work time'/>

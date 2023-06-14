@@ -1,0 +1,10 @@
+.photoStudent {
+    width: 270px;
+    height: 270px;
+}
+.photoStudent img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    border-radius: 20px;
+}
