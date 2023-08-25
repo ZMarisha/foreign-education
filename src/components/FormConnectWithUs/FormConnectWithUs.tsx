@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import d from './FormConnectWithUs.module.css';
-import BtnConnect from "../BtnConnect/BtnConnect";
-import arrow from '../../images/arrow.svg';
 import * as Yup from 'yup';
 import { Formik, Form } from 'formik';
 import FieldFormik from "../FieldFormik/FieldFormik";
 import Alert from '@mui/material/Alert';
-import AlertTitle from '@mui/material/AlertTitle'
+import AlertTitle from '@mui/material/AlertTitle';
+import BtnSend from "../BtnSend/BtnSend";
 
 const SignupSchema = Yup.object().shape({
     name: Yup.string()
@@ -57,7 +56,7 @@ const FormConnectWithUs:React.FC = () => {
                             <FieldFormik type={'text'} placeholder={"Your name"} name={'name'} error={errors.name} touched={touched.name} className={d.iconPerson} component="input"/>
                             <FieldFormik type={'text'} placeholder={"998998786399"} name={'phone'} error={errors.phone} touched={touched.phone} className={d.iconTel} component="input"/>
                             <FieldFormik type={'text'} placeholder={"Additional comments"} name={'comment'} error={errors.comment} touched={touched.comment} className={d.iconMessage} component="textarea"/>
-                            <BtnConnect icon={arrow} text='Send' fn={null}/>
+                            <BtnSend />
                         </Form>
                     )}
 

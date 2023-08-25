@@ -1,8 +1,9 @@
-.ourStudents {
+.students {
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
+    margin-bottom: 150px;
 }
 .ourStudent {
     width: 850px;

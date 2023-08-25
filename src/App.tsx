@@ -8,8 +8,9 @@ import Application from './pages/Application/Application';
 import Services from './pages/Services/Services';
 import News from './pages/News/News';
 import Article from './components/Article/Article';
-import Students from './components/Students/Students';
+import Students from './pages/Students/Students';
 import Contacts from './pages/Contacts/Contacts';
+import Universities from './pages/Universities/Universities';
 
 const App:React.FC = () => {
 
@@ -50,6 +51,10 @@ const App:React.FC = () => {
           path: "/contacts",
           element: <Contacts />,
         },
+        {
+          path: "/universities",
+          element: <Universities />
+        }
       ],
     }
   ])
