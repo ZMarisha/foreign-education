@@ -129,7 +129,7 @@ export const students = [
         aboutMyself: 'I am a 3rd year student of the Faculty of Arts and Sciences. I have many friends at the university because the guys here are sociable and friendly. We have many joint educational projects. I love to study, as you will learn a lot of interesting facts and moments from the life of artists.'
     },
     {
-        id: 6,
+        id: 7,
         firstName: 'Eric',
         lastName: 'T',
         img: Eric,

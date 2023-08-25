@@ -11,7 +11,6 @@ import WhyUs from "../../components/WhyUs/WhyUs";
 import QuestionsAndAnswers from "../../components/QuestionsAndAnswers/QuestionsAndAnswers";
 import ConnectWithUs from "../../components/ConnectWithUs/ConnectWithUs";
 import QuestionsRemain from "../../components/QuestionsRemain/QuestionsRemain";
-import telWhite from '../../images/telWhite.svg';
 import ModalView from "../../components/ModalView/ModalView";
 
 
@@ -19,21 +18,20 @@ const Home:React.FC = () => {
 
     const [open, setOpen] = useState(false)
 
-    const getModalView = () => {
-        setOpen(!open)
-        console.log(open)
+    const handleClickModalView = () => {
+        return setOpen(prev => !prev)
     }
 
     return (
         <div>
-            {open && <ModalView getModalView={getModalView}/>}
+            {open && <ModalView onClick={handleClickModalView}/>}
             <div className={d.aboutGrant}>
                 <div className="container">
                     <div className={d.mainText}>
                         <h1>Grant and contract training in <span>foreign</span> universities</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
                     </div>
-                    <BtnConnect icon={telWhite} text='Connect with us' fn={getModalView}/>
+                    <BtnConnect onClick={handleClickModalView}/>
                     <address className={d.address}>
                         <p>
                             <img src={address} alt='address'/>

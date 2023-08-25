@@ -4,9 +4,12 @@ import tel from '../../images/tel.svg';
 import address from '../../images/address.svg';
 import time from '../../images/time.svg';
 import BtnConnect from "../BtnConnect/BtnConnect";
-import telWhite from '../../images/telWhite.svg';
 
 const FormContacts:React.FC = () => {
+
+    const handleConnectWithUs = () => {
+        console.log('connect with us')
+    }
 
 
     return (
@@ -29,7 +32,7 @@ const FormContacts:React.FC = () => {
                     <p className="text">Mon-Fr 9:00 - 18:00</p>
                 </div>
                 <div className={d.btnConnect}>
-                    <BtnConnect icon={telWhite} text='Connect with us' fn={null}/>
+                    <BtnConnect onClick={handleConnectWithUs}/>
                 </div>
             </div>
         </address>

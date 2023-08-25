@@ -9,10 +9,9 @@ import iconContacts from '../../images/iconContacts.svg';
 import iconEnglishLevel from '../../images/iconEnglishLevel.svg';
 import iconPreferredProgram from '../../images/iconPreferredProgram.svg';
 import iconCalendar from '../../images/iconCalendar.svg';
-import BtnConnect from "../BtnConnect/BtnConnect";
-import arrow from '../../images/arrow.svg';
 import ConnectWithUs from "../ConnectWithUs/ConnectWithUs";
 import QuestionsRemain from "../QuestionsRemain/QuestionsRemain";
+import BtnSend from "../BtnSend/BtnSend";
 
 const SignupSchema = Yup.object().shape({
     firstName: Yup.string()
@@ -198,7 +197,7 @@ const FormApplication:React.FC = () => {
                             </div>
                         </div>
                         <div className={d.btnSend}>
-                            <BtnConnect icon={arrow} text='Send' fn={null}/>
+                            <BtnSend />
                         </div>
                     </Form>
                 )}

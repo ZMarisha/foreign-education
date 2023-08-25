@@ -1,22 +1,17 @@
 import React from "react";
-import d from './BtnConnect.module.css';
+// import d from './BtnConnect.module.css';
+import telWhite from '../../images/telWhite.svg';
+import Button from '../Button/Button';
 
 type IBtnConnect = {
-    icon: string,
-    text: string
-    fn: any
+    onClick: () => void
 }
 
-const BtnConnect:React.FC<IBtnConnect> = ({icon, text, fn}) => {
+const BtnConnect:React.FC<IBtnConnect> = ({onClick}) => {
 
 
     return (
-        <button className={d.btn} onClick={fn} type='submit'>
-            <div className={d.imgBtn}>
-                <img src={icon} alt='button for application'/>
-            </div>
-            <p>{text}</p>
-        </button>
+        <Button icon={telWhite} text='Connect with us' onClick={onClick} disabled={false}/>
     )
 }
 
