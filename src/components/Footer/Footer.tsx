@@ -1,6 +1,5 @@
 import React from "react";
 import NavBar from "../NavBar/NavBar";
-import SocialNetwork from "../SocialNetwork/SocialNetwork";
 import d from './Footer.module.css';
 import '../../index.css';
 import birdLogo from '../../images/birdLogo.png';
@@ -26,7 +25,6 @@ const Footer:React.FC = () => {
                                 <img src={calan} alt='logo'/>
                             </div>
                             <NavBar />
-                            <SocialNetwork />
                         </div>
                         <div className={d.btnFooter}>
                             <div className={d.logoBtm}>
