@@ -1,6 +1,10 @@
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [push]
+on: 
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
@@ -14,7 +18,7 @@ jobs:
         with: 
           node-version: ${{ matrix.node-version }}
       - name: install modules
-        run: npm ci
+        run: npm install
       - name: build project
         run: CI=false npm run build
       - name: test
