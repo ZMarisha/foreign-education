@@ -4,7 +4,6 @@ import d from './Header.module.css';
 import logo from '../../images/logo.png'
 import NavBar from "../NavBar/NavBar";
 import BtnApp from "../BtnApp/BtnApp";
-import SocialNetwork from "../SocialNetwork/SocialNetwork";
 import '../../index.css'
 
 
@@ -17,7 +16,6 @@ const Header:React.FC = () => {
                     <div className={d.logo}>
                         <img src={logo} alt='logo'/>
                     </div>
-                    <SocialNetwork />
                     <NavBar />
                     <BtnApp />
                 </div>
